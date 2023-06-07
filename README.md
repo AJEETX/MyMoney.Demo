@@ -73,6 +73,7 @@ Assumptions
 2. The rebalancing happens on 6th (June) and 12th (December) month.
 3. The allocation always happens from January, and SIP from February.
 
+Input needs to be read from a text file, and output should be printed to console. Your program should execute and take the location to the test file as parameter.
 
 ## SAMPLE INPUT-OUTPUT 1
 
@@ -141,6 +142,3 @@ INPUT:
 ## ACTUAL OUTPUT
 
 <img src='output2.png'>
-
-
-Input needs to be read from a text file, and output should be printed to console. Your program should execute and take the location to the test file as parameter.
