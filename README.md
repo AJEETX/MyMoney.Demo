@@ -136,4 +136,8 @@ OUTPUT:
 
 >   CANNOT_REBALANCE
 
+## OUTPUT
+
+<img src='output.png'>
+
 Input needs to be read from a text file, and output should be printed to console. Your program should execute and take the location to the test file as parameter.
