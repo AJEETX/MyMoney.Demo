@@ -98,13 +98,15 @@ INPUT:
  
 > REBALANCE
 
-OUTPUT:
+## EXPECTED OUTPUT:
 
 >   10593 7897 2272
 
 >   23619 11809 3936
 
+## ACTUAL OUTPUT
 
+<img src='output.png'>
 
 ## SAMPLE INPUT-OUTPUT 2
 
@@ -128,7 +130,7 @@ INPUT:
 
 >   REBALANCE
 
-OUTPUT:
+## EXPECTED OUTPUT:
 
 >   15937 14552 6187
 
@@ -136,8 +138,9 @@ OUTPUT:
 
 >   CANNOT_REBALANCE
 
-## OUTPUT
+## ACTUAL OUTPUT
 
-<img src='output.png'>
+<img src='output2.png'>
+
 
 Input needs to be read from a text file, and output should be printed to console. Your program should execute and take the location to the test file as parameter.
