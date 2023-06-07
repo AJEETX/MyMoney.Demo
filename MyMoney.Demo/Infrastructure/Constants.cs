@@ -6,10 +6,12 @@ namespace MyMoney.Demo.Infrastructure
     {
         public const string INPUT1_FILE = "input1.txt";
         public const string INPUT2_FILE = "input2.txt";
-        public static (string select, string file) OPTION1 = ("1", INPUT1_FILE);
-        public static (string select, string file) OPTION2 = ("2", INPUT2_FILE);
 
-        public static Dictionary<string, string> OptionLookup = new Dictionary<string, string> { { OPTION1.select, OPTION1.file }, { OPTION2.select, OPTION2.file } };
+        public static List<string> FileNumbers = new List<string>{ "1", "2" };
+        public static (string select, string file) OPTION1 = (FileNumbers[0], INPUT1_FILE);
+        public static (string select, string file) OPTION2 = (FileNumbers[1], INPUT2_FILE);
+
+        public static Dictionary<string, string> OptionLookup = new() { { OPTION1.select, OPTION1.file }, { OPTION2.select, OPTION2.file }, { string.Empty, OPTION1.file } };
 
         public const string INPUT1 = $"To process `{INPUT1_FILE}`, Type 1 and ENTER";
         public const string INPUT2 = $"To process `{INPUT2_FILE}`, Type 2 and ENTER";

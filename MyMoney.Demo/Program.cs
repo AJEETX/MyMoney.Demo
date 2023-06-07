@@ -11,16 +11,20 @@ namespace MyMoney.Demo
         {
             Console.WriteLine();
             string input = string.Empty;
-            while ((args == null || args.Length == 0) && string.IsNullOrWhiteSpace(input) || Constants.OptionLookup[input] == null)
+            while ((args == null || args.Length == 0) && string.IsNullOrWhiteSpace(input) || !Constants.FileNumbers.Contains(input))
             {
                 Console.WriteLine(Constants.InputText + Environment.NewLine);
                 Console.WriteLine(Constants.INPUT1);
                 Console.WriteLine(Constants.INPUT2 + Environment.NewLine);
                 input = Console.ReadLine();
 
-                if (string.IsNullOrWhiteSpace(input) || Constants.OptionLookup[input] == null) return;
+                if (string.IsNullOrWhiteSpace(input) || !Constants.FileNumbers.Contains(input)) continue;
+
+                Console.BackgroundColor = ConsoleColor.White;
+                Console.ForegroundColor = ConsoleColor.Black;
 
                 await Startup.Init.Execute(Constants.OptionLookup[input]);
+                Console.ResetColor();
             }
         }
     }
