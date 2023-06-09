@@ -22,6 +22,8 @@ namespace MyMoney.Demo.Domain
 
             var janChangeRate = portfolio.ChangeRates.Where(c => c.Month == Month.JANUARY).FirstOrDefault();
 
+            if (janChangeRate == null)  return (equityRounded, debtRounded, goldRounded);
+
             equityRounded = portfolio.Allocate.Equity + (int)Math.Floor(portfolio.Allocate.Equity * (janChangeRate.EquityRate / 100));
 
             goldRounded = portfolio.Allocate.Gold + (int)Math.Floor(portfolio.Allocate.Gold * (janChangeRate.GoldRate / 100));

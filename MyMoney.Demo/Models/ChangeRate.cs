@@ -1,5 +1,8 @@
-﻿namespace MyMoney.Demo.Models
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace MyMoney.Demo.Models
 {
+    [ExcludeFromCodeCoverage]
     internal class ChangeRate
     {
         public decimal EquityRate { get; set; }

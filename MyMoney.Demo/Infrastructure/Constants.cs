@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace MyMoney.Demo.Infrastructure
 {
+    [ExcludeFromCodeCoverage]
     internal class Constants
     {
         public const string INPUT1_FILE = "input1.txt";
