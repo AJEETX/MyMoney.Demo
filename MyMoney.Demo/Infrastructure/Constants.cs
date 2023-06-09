@@ -9,7 +9,7 @@ namespace MyMoney.Demo.Infrastructure
         public const string INPUT1_FILE = "input1.txt";
         public const string INPUT2_FILE = "input2.txt";
 
-        public static List<string> FileNumbers = new List<string>{ "1", "2" };
+        public static List<string> FileNumbers = new List<string> { "1", "2" };
         public static (string select, string file) OPTION1 = (FileNumbers[0], INPUT1_FILE);
         public static (string select, string file) OPTION2 = (FileNumbers[1], INPUT2_FILE);
 

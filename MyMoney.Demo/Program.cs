@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading.Tasks;
 
 using MyMoney.Demo.Infrastructure;
 
 namespace MyMoney.Demo
 {
+    [ExcludeFromCodeCoverage]
     internal class Program
     {
         private static async Task Main(string[] args)
